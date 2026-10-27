@@ -1,7 +1,4 @@
 
-
-//Fonctionnalité 3 : formulaire de contact 
-
 const formulaire = document.getElementById("formulaire");
 const confirmation = document.getElementById("confirmation");
 
