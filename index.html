@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Randonnée Atlas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <h1>Club Randonnée Atlas – Marrakech</h1>
+    <nav>
+      <a href="#activites">Activités</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="activites">
+      <h2>Nos sorties</h2>
+      <div class="cartes">
+        <article>
+          <h3>Vallée de l'Ourika</h3>
+          <p>Marche facile, 3 h, un dimanche par mois.</p>
+        </article>
+        <article>
+          <h3>Toubkal</h3>
+          <p>Ascension sur 2 jours pour randonneurs confirmés.</p>
+        </article>
+        <article>
+          <h3>Lac d'Ifni</h3>
+          <p>Week-end en altitude, bivouac inclus.</p>
+        </article>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <h2>Nous contacter</h2>
+      <form id="formulaire">
+        <label>Nom <input type="text" id="nom" required></label>
+        <label>Message <textarea id="message" rows="4" required></textarea></label>
+        <button type="submit">Envoyer</button>
+      </form>
+      <p id="confirmation" hidden></p>
+    </section>
+    
+  </main>
+
+  <footer>© 2026 Club Randonnée Atlas</footer>
+  <script src="app.js"></script>
+</body>
+</html>
