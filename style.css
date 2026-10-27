@@ -1,0 +1,66 @@
+/* ===== Base commune ===== */
+:root {
+  --bord: #d9d4c7;
+  --accent: #2e6b3a;
+  --fond: #faf8f3;
+  --texte: #2b2a27;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  line-height: 1.5;
+}
+
+footer { text-align: center; padding: 1.5rem; border-top: 1px solid var(--bord); color: #6b665e; }
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ----- En-tête et navigation ----- */
+/* F1:start */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--bord);
+}
+header h1 { margin: 0; font-size: 1.4rem; }
+nav { display: flex; gap: 1.2rem; }
+/* F1:end */
+
+/* ----- Activités ----- */
+/* F2:start */
+main { max-width: 44rem; margin: 0 auto; padding: 1rem; }
+section { padding: 1.5rem 0; }
+.cartes { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }
+article { padding: 1rem; border: 1px solid var(--bord); border-radius: 6px; background: #fff; }
+article h3 { margin: 0 0 .3rem; font-size: 1.05rem; }
+article p { margin: 0; }
+/* F2:end */
+
+/* ----- Contact ----- */
+/* F3:start */
+form { display: grid; gap: 1rem; max-width: 26rem; }
+label { display: grid; gap: .3rem; }
+input, textarea { font: inherit; padding: .5rem; border: 1px solid var(--bord); border-radius: 4px; }
+form button {
+  font: inherit;
+  padding: .6rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#confirmation { color: #2e6b3a; }
+/* F3:end */
