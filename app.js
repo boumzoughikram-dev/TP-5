@@ -12,4 +12,5 @@ formulaire.addEventListener("submit", e => {
   confirmation.hidden = false;
   formulaire.reset();
 });
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 
